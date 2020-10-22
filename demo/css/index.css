@@ -1,0 +1,380 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: 0;
+	font-family: OpenSans-Bold;
+	background-color: transparent;
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.wrap {
+	margin: auto;
+	width: 1440px;
+	height: 1666px;
+}
+
+.header {
+	width: 1440px;
+	height: 100px;
+	background-color: #ffffff;
+}
+
+.header .logo {
+	width: 105px;
+	height: 30px;
+	text-align: center;
+	color: #FFFFFF;
+	line-height: 30px;
+	background-color: #f92525;
+	margin: 30px 0 0 150px;
+	float: left;
+	cursor: pointer;
+
+}
+
+.header .logOut {
+	width: 110px;
+	height: 40px;
+	text-align: center;
+	color: #FFFFFF;
+	line-height: 40px;
+	background-color: #f92525;
+	border-radius: 2px;
+	float: right;
+	margin: 30px 150px 0 0;
+}
+
+.header .icon {
+	width: 110px;
+	height: 40px;
+	float: right;
+	text-align: center;
+	line-height: 40px;
+	margin-top: 30px;
+}
+
+.header .icon span img {
+	width: 18px;
+	height: 18px;
+	margin: 0 8px;
+}
+
+.main {
+	width: 1440px;
+	height: 1276px;
+	padding: 70px 150px 53px;
+	background-color: #f5f8f9;
+}
+
+.main .main-top {
+	width: 100%;
+	height: 110px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.main .main-top .main-top-left div {
+	font-size: 30px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 50px;
+	letter-spacing: 0px;
+	color: #262b2e;
+}
+
+.main .main-top .main-top-left span {
+	font-size: 15px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #262b2e;
+	opacity: 0.7;
+}
+
+.main .main-top .main-top-right {
+	height: 30px;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #262b2e;
+	display: flex;
+	margin-top: 20px;
+	position: relative;
+	cursor: pointer;
+}
+
+.main .main-top .main-top-right .item {
+	padding: 5px 10px;
+}
+
+.main .main-top .main-top-right a:hover {}
+
+.main .main-top .main-top-right .line {
+	width: 1px;
+	position: absolute;
+	border-bottom: 2px solid #cccfd0;
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	transition: all 0.5s;
+}
+
+.main .report {
+	width: 100%;
+	height: 288px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.main .report .report-left {
+	width: 560px;
+	height: 288px;
+	background-color: #FFFFFF;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.main .report .report-left .swiper {
+	width: 539px;
+	height: 267px;
+	position: relative;
+}
+
+.main .report .report-left .swiper .swiper-item {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: .8s;
+}
+
+.main .report .report-left .swiper .swiper-item img {
+	width: 100%;
+	height: 100%;
+}
+
+.main .report .report-left .swiper .swiper-item:first-child {
+	opacity: 1;
+}
+
+.main .report .report-left .swiper .swiper-left,
+.main .report .report-left .swiper .swiper-right {
+	width: 25px;
+	height: 50px;
+	position: absolute;
+	top: 50%;
+	line-height: 50px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, .1);
+	transform: translateY(-50%);
+	font-size: 30px;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+}
+
+.main .report .report-left .swiper .swiper-left:hover,
+.main .report .report-left .swiper .swiper-right:hover {
+	transition: .5s;
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+.main .report .report-left .swiper .swiper-right {
+	right: 0;
+	border-radius: 5px 0 0 5px;
+}
+
+.main .report .report-left .swiper .dots {
+	position: absolute;
+	text-align: center;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 90%;
+}
+
+.main .report .report-left .swiper .dots span {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	margin: 0 2px;
+	background-color: #c0c2c5;
+	cursor: pointer;
+}
+
+.main .report .report-left .swiper .dots span:hover {
+	background-color: #fff;
+	height: 11px;
+}
+
+.main .report .report-left .swiper .dots .active {
+	background-color: #fff;
+	height: 11px;
+
+}
+
+.main .report-right {
+
+	width: 560px;
+	height: 288px;
+	background-color: #FFFFFF;
+}
+
+.main .report-right .report-right-top {
+	width: 100%;
+	height: 110px;
+	border-bottom: 1px solid #efeff0;
+	position: relative;
+}
+
+.main .report-right .report-right-top div:first-child {
+	font-family: OpenSans;
+	font-size: 18px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #262b2e;
+	position: absolute;
+	left: 50px;
+	top: 44px;
+}
+
+.main .report-right .report-right-top div:last-child {
+	width: 95px;
+	height: 40px;
+	border-radius: 2px;
+	border: solid 2px #e9e9ea;
+	color: #676a6c;
+	text-align: center;
+	line-height: 38px;
+	font-family: OpenSans-Semibold;
+	font-size: 13px;
+	font-weight: normal;
+	font-stretch: normal;
+	position: absolute;
+	right: 50px;
+	top: 40px;
+}
+
+.main .report-right .report-right-bottom {
+	width: 100%;
+	height: 178px;
+}
+
+.main .report-right .report-right-bottom .title {
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #262b2e;
+	font-weight: bold;
+}
+
+
+.main .report-right .report-right-bottom .title,
+.main .report-right .report-right-bottom .list {
+	width: 460px;
+	height: 30px;
+	margin: 20px auto;
+	display: flex;
+	line-height: 30px;
+
+}
+
+.main .report-right .report-right-bottom .time {
+	width: 103px;
+}
+
+.main .report-right .report-right-bottom .userName {
+	flex: 1;
+}
+
+.main .report-right .report-right-bottom .btn {
+	width: 65px;
+	height: 100%;
+	background-color: #5dd054;
+	border-radius: 2px;
+	font-family: OpenSans-Bold;
+	font-size: 13px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 30px;
+	text-align: center;
+	letter-spacing: 0px;
+	color: #ffffff;
+}
+
+.main .report-right .report-right-bottom .title .btn {
+	background-color: #FFFFFF;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #262b2e;
+	font-weight: bold;
+}
+
+.main .charts {
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.main .charts .line {
+	width: 100%;
+	height: 349px;
+	background-color: #FFFFFF;
+}
+
+.main .charts .pie,
+.main .charts .bar {
+	margin-top: 20px;
+	width: 560px;
+	height: 377px;
+	background-color: #FFFFFF;
+}
+
+.footer {
+	width: 1440px;
+	height: 253px;
+	padding: 80px 150px 0 150px;
+	background-color: #202124;
+}
+
+.footer .footer-logo {
+	width: 105px;
+	height: 30px;
+	text-align: center;
+	color: #FFFFFF;
+	line-height: 30px;
+	background-color: #f92525;
+	float: left;
+	cursor: pointer;
+}
+
+.footer .footer-right {
+	width: 776px;
+	float: left;
+	margin-left: 78px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: -6px;
+}
+
+.footer-right a {
+	width: 20%;
+	font-size: 13px;
+	padding: 5px;
+	color: #FFFFFF;
+	display: inline-block;
+}
