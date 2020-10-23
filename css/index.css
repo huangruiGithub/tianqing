@@ -17,6 +17,7 @@ a {
 	margin: auto;
 	width: 1440px;
 	height: 1666px;
+	background-color: #1c1d20;
 }
 
 .header {
@@ -185,7 +186,7 @@ a {
 .main .report .report-left .swiper .swiper-left:hover,
 .main .report .report-left .swiper .swiper-right:hover {
 	transition: .5s;
-	background-color: #000000;
+	background-color: rgba(0,0,0,.4);
 	color: #FFFFFF;
 }
 
@@ -209,6 +210,7 @@ a {
 	margin: 0 2px;
 	background-color: #c0c2c5;
 	cursor: pointer;
+	transition: .5s;
 }
 
 .main .report .report-left .swiper .dots span:hover {
